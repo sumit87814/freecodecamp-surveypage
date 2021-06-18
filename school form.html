@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: capital;
+    }
+    body{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color:rgb(197, 192, 192);
+        
+
+    }
+    .container{
+        max-width: 700px;
+        width: 100%;
+        background: rgb(216, 217, 218);
+        padding: 25px 30px 20px 30px;
+        border-radius: 8px;
+ }
+ .title{
+font-size: 25px;
+font-weight: 300px;
+background-color: blue;
+color: white;
+}
+.container form .userdetail{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.userdetail .inputbox .detail{
+    display:block;
+    font-weight: 500px;
+    margin-bottom: 5px;
+    margin: 50px 0 10px 0;
+}
+.userdetail .inputbox input{
+    height: 40px;
+    border-radius:23px ;
+    border: 2px solid#ccc;
+    padding-left: 15px;
+    font-size: 18px;
+    width: 100%;
+    outline:indigo;
+
+}
+.gender{
+display: flex;
+    width: 100%;
+    margin: 25px 0px 15px 0px; 
+    justify-content:space-between;
+    letter-spacing:1px;
+    background-color:blue;
+    color: white;
+}
+button{
+    background-color: red;
+    height: 50%;
+    width: 100px;
+    letter-spacing: 3px;
+}
+@media(max-width:500px){
+    .container{
+        max-width: 100%;
+    }
+    .gender{
+        width:70%;
+    }
+    .container form .userdetail{
+        max-height: 500px;
+        overflow:scroll;
+    }
+}
+
+    
+
+    </style><iframe src="school-icon.png" frameborder="100px" width="500px" height="500px" padding="100px"></iframe>
+</head>
+<body>
+    <div class="container">
+         <div class="title">Registration</div><br>
+        <form action="#">
+         <div class="userdetail">
+         <div class="inputbox">                          
+              <span class="detail">Full Name</span>
+            <input type="text" placeholder="enter your name">
+            </div>
+            <div class="inputbox">                         
+                  <span class="detail">user  Name</span>
+                <input type="text" placeholder="enter your user name">
+                </div>
+                <div class="inputbox">                           
+                    <span class="detail">email</span>
+                    <input type="text" placeholder="enter your email">
+                    </div>
+                    <div class="inputbox">                       
+                    <span class="detail">phone number</span>
+                        <input type="number" placeholder="mobile number">
+                        </div>
+                        <div class="inputbox">                          
+                             <span class="detail">password</span>
+                            <input type="password" placeholder="enter your password">
+                            </div>
+                            <div class="inputbox">                         
+                                  <span class="detail">confirm password</span>
+                                <input type="password" placeholder="confirm password">
+                                </div>
+                                <div class="inputbox">                          
+                                     <span class="detail">date of birth</span>
+                                    <input type="date" placeholder="date of birth">
+                                    </div><br>
+
+                    <div class="gender">GENDER</div>
+
+                    <label  for="male">male</label>
+                    <input type="radio" name="gender" id="male" value="male">   
+                    <label for="female">female</label>
+                    <input type="radio" name="gender" id="female" value="female">  
+                    <label for="both">both </label> 
+                    <input type="radio" name="gender" id="both" value="both">       
+        </div>
+        <button>SUBMIT</button>
+        <button>RESET</button>
+        </form>
+    </div>
+    
+</body>
+<footer> &copy; right reserved </footer>
+</html>
